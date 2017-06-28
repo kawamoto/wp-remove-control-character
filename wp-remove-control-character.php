@@ -11,5 +11,6 @@
 require_once dirname(__FILE__) . '/src/WPRemoveControlCharacter.php';
 
 add_filter('the_content', array(new WPRemoveControlCharacter, 'remove'));
+add_filter('the_title', array(new WPRemoveControlCharacter, 'remove'));
 
 /* End of file wp-remove-control-character.php */
